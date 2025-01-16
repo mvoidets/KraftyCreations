@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 import { Product } from '../data/Products';
 import Image from 'next/image';
-import styles from '../styles/CartPage.module.css';
+import styles from '../styles/CheckoutPage.module.css';
 
 const CheckoutPage = () => {
   const [cart, setCart] = useState<Product[]>([]);
@@ -61,7 +61,7 @@ const CheckoutPage = () => {
       {cart.length === 0 ? (
         <p>Your cart is empty</p>
       ) : (
-        <div>
+        <div className={styles.checkoutContainer}>
           <ul>
             {cart.map((item) => (
               <li key={item.id}>
@@ -75,7 +75,7 @@ const CheckoutPage = () => {
               </li>
             ))}
           </ul>
-          <div>
+          <div className={styles.checkoutContainer}>
             <p>Total Items: {numberOfItems}</p>
             <p>Subtotal: ${subtotal.toFixed(2)}</p>
           </div>

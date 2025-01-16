@@ -2,7 +2,7 @@
 import React, { useState } from 'react'; // Import useState
 //import { useCart } from '../context/CartContext';
 
-import styles from '../styles/CartPage.module.css';
+import styles from '../styles/CheckoutPage.module.css';
 import Image from 'next/image'
 
 interface CartItemProps {

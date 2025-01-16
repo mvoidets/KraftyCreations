@@ -2,7 +2,7 @@
 
 import { useState, useEffect, CSSProperties } from 'react';
 import CartItem from './CartItem';
-import '../styles/CartPage.module.css';
+import '../styles/CheckoutPage.module.css';
 import { useRouter } from 'next/navigation';
 
 

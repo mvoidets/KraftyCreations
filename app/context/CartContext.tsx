@@ -1,15 +1,6 @@
 "use client";
 import { createContext, useState, ReactNode, useContext, useEffect } from 'react';
-//import '../styles/CartButton.module.css';
 
-// // Define cart item type
-// interface CartItem {
-//   id: number;
-//   name: string;
-//   image: string;
-//   price: number;
-//   quantity: number;
-// }
 export interface Product {
   id: number;
   name: string;
