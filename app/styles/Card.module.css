@@ -1,4 +1,20 @@
-/* Card.module.css */
+.addToCartButton {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: auto;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.addToCartButton:hover {
+  background-color: #333;
+}
 
 /* Card styles */
 .card {
@@ -28,6 +44,7 @@
   object-fit: cover; /* Ensures the image covers the area without distortion */
   border-radius: 8px;
 }
+ 
 
 .cardContent {
   margin-top: 15px;
@@ -46,12 +63,13 @@
 
 .cardContent p {
   font-size: 0.9em;
-  color: #555;
+  color: black;
   margin-bottom: 10px;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap; /* Ensure description text doesn't wrap */
+  white-space: normal; /* Ensure description text doesn't wrap */
 }
+
 
 /* Modal Styles */
 .modal {
@@ -81,7 +99,7 @@
 
 
 /* Optional: Close button styles for modal */
-.modalContent button {
+/* .modalContent button {
   margin-top: 10px;
   padding: 10px;
   background-color: black;
@@ -89,9 +107,9 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
-}
-
+} */
+/* 
 .modalContent button:hover {
   background-color: #0056b3;
-}
+} */
 

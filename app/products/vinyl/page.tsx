@@ -65,6 +65,8 @@ export default function VinylPage() {
 
   return (
     <div>
+       <h1>T-shirts, mugs, tumblers and more</h1>
+       <h3> All items crafted using die-cutting</h3>
       <Search products={vinylProducts} query={query} onSearch={handleSearch} /> {/* Search Component */}
       {loading ? (
         <SkeletonLoader /> // Show skeleton loader when loading

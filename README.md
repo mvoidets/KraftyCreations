@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+  # Title
+   KraftyCreationsby3 
+   
 
-First, run the development server:
+  ## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+  - [Description](#description)
+  - [Design](#design)
+  - [Install](#install)
+  - [Contributor](#contributor)
+  - [License](#license)
+  - [Questions](#questions)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+  ## Description
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   This is a webpage showcasing handmade crafts. They range from resin pieces, acrylic paintings, t-shirts, mugs and more. Each category has its own page where a user can choose to purchase the item. They can search on particular items per page and add item t to the cart. They have the option to view the cart and update quanities purchased. Then can proceed to checkout. 
 
-## Learn More
+  ## Design
 
-To learn more about Next.js, take a look at the following resources:
+    I am a crafter who enjoys creating unique items for others to purchase.
+![alt text](assets/homepage.png)
+![alt text](assets/browse.png)
+![alt text](assets/cart.png)
+![alt text](assets/cart_item.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  ## Install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    npm run dev
 
-## Deploy on Vercel
+  ## Contributor
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    mvoidets, google searches
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+  ## License
+
+    This is not licensed  
+
+  ### Questions
+
+  If you have any questions, please contact me at: [mvoidets@yahoo.com] (mailto:mvoidets@yahoo.com). 
+
+  My GitHub profile is [mvoidets](https://guthub.com/mvoidets).
+
+  Thank you for visiting my repository!

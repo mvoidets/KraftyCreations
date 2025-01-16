@@ -65,7 +65,7 @@ export default function AcrylicPage() {
 
   return (
     <div>
-      <h1>Acrylic Products</h1>
+      <h1>Acrylic Paintings</h1>
       <Search products={acrylicProducts} query={query} onSearch={handleSearch} /> {/* Search Component */}
       {loading ? (
         <SkeletonLoader /> // Show skeleton loader when loading

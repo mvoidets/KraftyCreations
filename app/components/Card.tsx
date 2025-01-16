@@ -42,10 +42,13 @@ export default function Card({ product }: CardProps) {
         height={200}/>
         <div className={styles.cardContent}>
           <h3>{product.name}</h3>
-          {/* <p>{product.description}</p>
-          <p><strong>Tags:</strong> {product.tags.join(', ')}</p> */}
+          <p className={styles.description}>{product.description}</p>
+          {/*<p><strong>Tags:</strong> {product.tags.join(', ')}</p> */}
           <p><strong>Price: </strong>${product.price}</p>
-          <button onClick={handleAddToCart}>Add to Cart</button>
+          <button 
+          className={styles.addToCartButton}
+          onClick={handleAddToCart}
+        >  Add to Cart</button>
         </div>
       </div>
     </div>

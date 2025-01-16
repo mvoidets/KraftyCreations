@@ -64,7 +64,7 @@ export default function ResinPage() {
 
   return (
     <div>
-      <h1>Resin Products</h1>
+      <h1>Resin Crafts</h1>
       <Search products={resinProducts} query={query} onSearch={handleSearch} /> {/* Search Component */}
       {loading ? (
         <SkeletonLoader /> // Show skeleton loader when loading
