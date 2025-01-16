@@ -1,0 +1,56 @@
+/* styles/sidebar.module.css */
+
+.appLayout .sidebar {
+  background-color: #2cb827;
+  color: white;
+  padding: 20px;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+.sidebar {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  height: 100%;
+}
+
+
+.sidebar h3 {
+  font-size: 40px; /* Larger header size */
+  margin-bottom: 20px;
+  color: white,
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 10px 0; /* Add space between links */
+  font-size: 22px;
+}
+
+.sidebar a {
+  color: white; /* Text color for links */
+  text-decoration: none; 
+  transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition for color and text-decoration */
+
+}
+
+.sidebar a:hover {
+  text-decoration: underline; /* Optional: add underline on hover */
+  color:blueviolet;
+}
+.sidebar a:hover {
+  text-decoration: blink; /* Optional: add underline on hover */
+  color:blueviolet;
+}
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
