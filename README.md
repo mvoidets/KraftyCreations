@@ -39,8 +39,8 @@
 
   ### Questions
 
-  If you have any questions, please contact me at: [mvoidets@yahoo.com] (mailto:mvoidets@yahoo.com). 
+  If you have any questions, please contact me at: [mvoidets@yahoo.com]. 
 
-  My GitHub profile is [mvoidets](https://guthub.com/mvoidets).
+  My GitHub profile is [mvoidets].
 
   Thank you for visiting my repository!
