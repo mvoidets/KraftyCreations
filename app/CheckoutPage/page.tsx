@@ -56,7 +56,7 @@ const CheckoutPage = () => {
   };
 
   return (
-    <div>
+    <div > 
       <h1>Checkout</h1>
       {cart.length === 0 ? (
         <p>Your cart is empty</p>

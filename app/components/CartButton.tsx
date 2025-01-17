@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import Modal from './Modal'; 
 
 const CartButton = () => {
@@ -31,11 +31,16 @@ const CartButton = () => {
     router.push('/checkout'); // Redirect to checkout page
   };
 
+  const pathname = usePathname();
+  const isHomePage = pathname === '/';
+
   return (
     <>
+    {!isHomePage && (
       <button onClick={handleClick} style={styles.cartButton}>
         <span>🛒</span> Cart ({cartCount})
       </button>
+    )}
       {modalOpen && (
         <Modal closeModal={closeModal} checkout={checkout} />
       )}

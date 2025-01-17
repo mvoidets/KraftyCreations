@@ -1,22 +1,34 @@
 /* styles/sidebar.module.css */
 
-.appLayout .sidebar {
-  background-color: #2cb827;
-  color: white;
-  padding: 20px;
-  font-size: 18px;
-  font-family: Arial, sans-serif;
-  height: 100%;
-}
-
 .sidebar {
   background-color: black;
   color: white;
   padding: 20px;
   height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+ 
+  transition: transform 0.3s ease; /* Smooth transition for the sidebar */
 }
 
-
+/* Hamburger Button */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.sidebar.open {
+  transform: translateX(0);
+}
+.menu {
+  display: block; /* Initially hide the menu */
+  flex-direction: column; /* Stack the items vertically */
+  padding-top: 20px; /* Add padding to give space at the top */
+}
 .sidebar h3 {
   font-size: 40px; /* Larger header size */
   margin-bottom: 20px;
@@ -34,23 +46,37 @@
 }
 
 .sidebar a {
-  color: white; /* Text color for links */
+  color: white; 
   text-decoration: none; 
-  transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition for color and text-decoration */
-
+  transition: color 0.3s ease, text-decoration 0.3s ease; 
 }
-
 .sidebar a:hover {
   text-decoration: underline; /* Optional: add underline on hover */
   color:blueviolet;
 }
-.sidebar a:hover {
-  text-decoration: blink; /* Optional: add underline on hover */
-  color:blueviolet;
-}
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+
+/* Media Query for mobile - below 768px */
+@media (max-width: 768px) {
+  /* Show hamburger on mobile screens */
+  .hamburger {
+    display: block;
+  }
+
+  /* Sidebar is hidden by default on mobile */
+
+  .sidebar.open {
+    transform: translateX(0); /* Sidebar slides in */
+  }
+
+  /* On mobile, hide the menu items by default and only show when sidebar is open */
+  .menu {
+    display: none; /* Hide the menu items */
+  }
+
+  .sidebar.open .menu {
+    display: block; /* Show the menu when sidebar is open */
+  }
+  .sidebar h3 {
+    display: none; /* Hide 'Menu' on mobile */
   }
 }

@@ -19,13 +19,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en">
       <body style={{ margin: 0, padding: 0 }}>
         <div style={{ display: 'grid', gridTemplateColumns: '250px 1fr', height: '100vh' }}>
-          {/* Render CartButton only after the component has mounted (client-side) */}
-          <CartProvider>
-          {isClient && <CartButton />}
-          
+                    
           {/* Sidebar */}
           <Sidebar />
-
+          <CartProvider>
+          {isClient && <CartButton />}
           {/* Main Content */}
           <main
             style={{
